@@ -7,6 +7,7 @@ const App = () =>  (
   <Fragment>
 
     <Header />
+      <SearchFoodDishes />
     <Footer />
 
   </Fragment>

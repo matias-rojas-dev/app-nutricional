@@ -7,10 +7,13 @@ import { getApiUrl } from "./../constants";
 
 const SearchFoodDishes = () => {
   const [hits, setHits] = useState();
-
+        //inicializamos un campo, y luego ese mismo campo cambiaría y se setea
+        //por el set. De esa forma, va mutando el valor de esta propiedad.
+        // useState() sirve para inicializar una propiedad que sabes que cambiará
+        //la información que esta tendrá dentro.
+    
   const getData = (query) => { 
-    query &&
-      fetch(getApiUrl(query))
+    query && fetch(getApiUrl(query))
         .then((data) => data.json())
         .then((res) => setHits(res.hits))
         .catch((err) => console.log(err));
