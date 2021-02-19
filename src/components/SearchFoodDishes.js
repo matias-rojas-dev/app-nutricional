@@ -23,8 +23,10 @@ const SearchFoodDishes = () => {
     <Fragment>
       <div className="root">
         <Grid container spacing={3} justify="center">
-          <AnyFoodDishes getData={getData} />
-          <PredefinedFoodDishes getData={getData} setHits={setHits} />
+          <AnyFoodDishes getData={getData} /> {/*Para buscar data, podemos pasar una props y esta recibe la data recibida*/}
+
+          <PredefinedFoodDishes getData={getData} setHits={setHits} /> {/*Una props con data y además un setHits para ir conociendo el contexto de los hits nuevos*/}
+
         </Grid>
       </div>
       {hits && <FoodDishes hits={hits} />}

@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 const FoodDish = ({ uri, label, image, calories, ingredients }) => (
-    <Grid item xs={12} sm={6} md={4}>
+    <Grid item xs={12} sm={6} md={3}>
         <Paper className="paper">
             <h2>{label}</h2>
             <img src={image} alt={label} />

@@ -1,11 +1,11 @@
 const base_url = 'https://api.edamam.com/search';
 
-const api_id = '8ad0c192';
+const api_id = '662bbcaa';
 
-const api_key = '2df9acabd6ce7fd2c74f424f57bc8bec';
+const api_key = 'fa7176cdccf4717cb94e80cf2d3f18c0';
 
 
-export const getApiUrl = query => `${base_url}?q=${query}&app_id=${api_id}&app_key=${api_key}"`;
+export const getApiUrl = query => `${base_url}?q=${query}&app_id=${api_id}&app_key=${api_key}`;
 
 export const predefinedFoodDishes = [
     { _id: 1, title: 'Eggs', selected: false },
@@ -17,7 +17,7 @@ export const predefinedFoodDishes = [
     { _id: 7, title: 'Ramen', selected: false },
     { _id: 8, title: 'Curry', selected: false },
     { _id: 9, title: 'Sushi', selected: false },
-    { _id: 1, title: 'Lasagna', selected: false }
+    { _id: 10, title: 'Lasagna', selected: false }
 ];
 
 export const anyFoodDishes = [
@@ -30,5 +30,5 @@ export const anyFoodDishes = [
     { _id: 7, title: 'Cheese' },
     { _id: 8, title: 'Meat' },
     { _id: 9, title: 'Oat' },
-    { _id: 10, title: 'Lentils' },
+    { _id: 10, title: 'Lentils' }
 ];

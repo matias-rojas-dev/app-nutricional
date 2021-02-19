@@ -7,7 +7,7 @@ import { predefinedFoodDishes } from "./../constants/index";
 const PredefinedFoodDishes = ( {getData, setHits} ) => {
     const getFoods = title => {
         predefinedFoodDishes.map(foodDish => {
-            foodDish.selected = foodDish.title === title ?!foodDish.selected : false;
+            foodDish.selected = foodDish.title === title ? !foodDish.selected : false;
             return !foodDish.selected ? setHits() : getData(document.querySelector(`#${title}`).value.toLowerCase().trim())
         });
     };
@@ -20,11 +20,11 @@ const PredefinedFoodDishes = ( {getData, setHits} ) => {
                         const {title, selected} = foodDish;
                         return (
                             <ToggleButton
-                            key = {title}
-                            id = {title}
-                            value = {title}
-                            selected = {selected}
-                            onClick = {() => getFoods(title)}
+                                key = {title}
+                                id = {title}
+                                value = {title}
+                                selected = {selected}
+                                onClick = {() => getFoods(title)}
                             >
                                 {title}
                             </ToggleButton>
